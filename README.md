@@ -1,24 +1,21 @@
-## README
+# Rails ActionCable Example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
 
-Things you may want to cover:
+```
+$ git clone https://github.com/ogom/rails-actioncable-example.git
+$ cd rails-actioncable-example
+$ bundle install --path .bundle
+$ rake db:migrate
+$ bundle exec foreman start
+```
 
-* Ruby version
+## Usage
 
-* System dependencies
+```
+$ open http://localhost:5000
+```
 
-* Configuration
+## License
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* MIT
