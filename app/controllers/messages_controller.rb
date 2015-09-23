@@ -24,7 +24,7 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.json
   def create
-    ActionCable.server.broadcast 'messages', message: params[:message][:content]
+    MessageJob.perform_later(params[:message][:content])
     head :ok
 
     # @message = Message.new(message_params)
